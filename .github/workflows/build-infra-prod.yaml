@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    runs-on: [foo, bar, biz]
+    runs-on: infrastructure-production-toolbox-ubuntu22-2g-1cpu-x64
 
     steps:
       - name: Checkout code
