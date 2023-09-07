@@ -1,0 +1,16 @@
+name: Build Infra-Prod
+
+on:
+  push:
+    branches:
+      - master
+      - sandbox
+      - 'environment/**'
+
+jobs:
+  build:
+    runs-on: [foo, bar, biz]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
